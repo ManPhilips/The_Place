@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+body{
+    overflow-x: hidden;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.concert-one-regular {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  
+  
+.roboto-font {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  .btn{
+    border-radius: 5px;
+    
+  }
+
+  .header-text{
+    font-size: 80px;
+  }
+  .bg-img{
+    background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)) center center / cover no-repeat, url(./images/spaghetti-spice.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+}

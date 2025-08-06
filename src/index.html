@@ -1,0 +1,493 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+
+
+  <!--AOS ANIMATION-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/74a2190a1f.js" crossorigin="anonymous"></script>
+</head>
+<body class="p-0">
+    <!--Header Section-->
+    
+    <header id="home" class="bg-white shadow-md top-0 left-0 right-0 z-100  bg-img w-full">
+      <!-- Navbar -->
+<nav  class="max-w-[1440px] container fixed mx-auto py-4 flex items-center justify-between px-4 z-50" id="navbar">
+    <!-- Logo -->
+    <a href="#">
+        <div class="text-2xl font-bold flex items-center">
+            <img src="./images/logo.png" class="h-12" alt="The Place">
+            <span class="text-primary"></span>
+        </div>
+    </a>
+
+    <!-- Hamburger Icon (Mobile) -->
+    <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="text-black focus:outline-none">
+            <!-- Hamburger SVG -->
+            <svg class="h-8 w-8 fill-current" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Menu Items -->
+    <ul id="home" class="hidden md:flex items-center space-x-6 roboto-font text-white">
+        <li><a href="#home" class="hover:text-amber-400">HOME</a></li>
+        <li><a href="#about" class="hover:text-amber-400">ABOUT</a></li>
+        <li><a href="#services" class="hover:text-amber-400">SERVICES</a></li>
+        <li><a href="#menu" class="hover:text-amber-400">MENU</a></li>
+        <li><a href="#contact" class="hover:text-amber-400">CONTACT</a></li>
+        <button class="bg-amber-500 btn text-white px-4 py-2 rounded-lg hover:bg-amber-600 transition">
+            ORDER NOW
+        </button>
+    </ul>
+</nav>
+
+<!-- Mobile Menu (Hidden by default) -->
+<ul id="mobile-menu" class=" flex flex-col items-center bg-black text-white roboto-font space-y-6 py-8 md:hidden">
+    <li><a href="#home" class="hover:text-amber-400">HOME</a></li>
+    <li><a href="#services" class="hover:text-amber-400">SERVICES</a></li>
+    <li><a href="#about" class="hover:text-amber-400">ABOUT</a></li>
+    <li><a href="#menu" class="hover:text-amber-400">MENU</a></li>
+    <li><a href="#contact" class="hover:text-amber-400">CONTACT</a></li>
+    <button class="bg-amber-500 btn text-white px-4 py-1 rounded-lg hover:bg-amber-600 transition">
+        ORDER NOW
+    </button>
+</ul>
+
+
+
+
+        <section id="home" class="max-w-[1440px] container mx-auto px-8 py-20 flex flex-col md:flex-row items-center gap-12  ">
+
+            <!--left content-->
+            <div class="md:w-1/2 mb-8"  data-aos="fade-right">
+                <h2 class="header-text text-7xl text-white font-bold concert-one-regular mb-6 ">Enjoy Our <br> Delicious Meal</h2>
+                <p class="ml-2 text-white py-2 mb-6 font-bold">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. 
+                    Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+                </p>
+                <button class=" text-white bg-amber-500 ml-1.5 btn px-6 py-4 roboto-font rounded-2xl text-lg hover:bg-amber-600 cursor-pointer">BOOK AN ORDER</button>
+            </div>
+    
+            <!--Right content-->
+            <div class="md:w-1/2 animate-pulse ">
+                <img src="./images/spag.png" alt="Spag" class="w-130" data-aos="fade-down">
+            </div>
+        </section>
+    </header>  
+    
+    <!--Services Section-->
+  
+    <section id="services" class="bg-gray-50 w-full">
+        <div class=" items-center   pt-24  pb-20">
+            <h2 class="text-2xl flex mx-auto justify-center">Our Services</h2>
+            <h2 class="text-4xl font-bold flex mx-auto justify-center">Explore Our Services</h2>
+        </div>
+        <div class="container mx-auto px-4 py-8 justify-center items-center ">
+            <div class="grid gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 mx-auto  justify-center">
+              
+              <!-- Example Card -->
+               
+              <div class="bg-white  rounded-sm shadow-lg p-4 transition-transform duration-300 hover:scale-105 hover:bg-amber-500 hover:text-white"  data-aos="fade-up" data-aos-duration="500">
+                <i class=" fa-solid fa-user-tie text-6xl  py-8"></i>
+                <h3 class="text-3xl font-bold  concert-one-regular mb-2">Master Chefs</h3>
+                <p class="text-sm">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+              </div>
+    
+              <div class="bg-white rounded-sm shadow-lg p-4 transition-transform duration-300 hover:scale-105 hover:bg-amber-500 hover:text-white" data-aos="fade-up" data-aos-duration="700">
+                <i class="fa-solid fa-utensils text-6xl  py-8"></i>
+                <h3 class="text-3xl font-bold concert-one-regular mb-2">Quality Food</h3>
+                <p class= "text-sm">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+              </div>
+    
+              <div class="bg-white rounded-sm shadow-lg p-4 transition-transform duration-300 hover:scale-105 hover:bg-amber-500 hover:text-white" data-aos="fade-up" data-aos-duration="800" >
+                <i class="fa-solid fa-cart-plus text-6xl  py-8"></i>
+                
+                <h3 class="text-3xl font-bold concert-one-regular mb-2">Online Order</h3>
+                <p class="text-sm">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+              </div>
+    
+              <div class="bg-white rounded-sm shadow-lg p-4 transition-transform duration-300 hover:scale-105 hover:bg-amber-500 hover:text-white" data-aos="fade-up" data-aos-duration="1000">
+                <i class="fa-solid fa-headset text-6xl  py-8"></i>
+               
+                <h3 class="text-3xl font-bold concert-one-regular mb-2">24/7 Service</h3>
+                <p class="text-sm">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+              </div>   
+             <!-- <img src="https://via.placeholder.com/300" alt="Example Image" class="rounded-xl mb-4 w-full object-cover h-48">-->
+            </div>
+          </div>
+    </section>
+
+    <!--About Us Section-->
+    <section id="about" class="bg-gray-50 w-full">
+        <div class="items-center pt-24 pb-20 ">
+            <h2 class="flex text-3xl items-center justify-center"> About Us</h2>
+        </div>
+        <section class="max-w-[1440px] container mx-auto px-16 py-20 flex flex-col md:flex-row items-center gap-12">
+            
+            <!--left content-->
+            <div class="container md:w-1/2 items-center justify-center shadow-lg">
+                <div class="grid gap-4  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 items-center justify-center">
+                    <div class="shadow-lg" data-aos="fade-down-right" data-aos-duration="500">
+                        <img src="./images/dougnurt  (4).jpg" alt="" class="rounded-sm" >
+                    </div>
+                    <div class="shadow-lg" data-aos="fade-down-left" data-aos-duration="700">
+                        <img src="./images/dougnurt  (3).jpg" alt="" class="rounded-sm">
+                    </div>
+                    <div class="shadow-lg" data-aos="fade-down-right" data-aos-duration="900">
+                        <img src="./images/dougnurt  (3).jpg" alt="" class="rounded-sm">
+                    </div>
+                    <div class="shadow-lg" data-aos="fade-up-left" data-aos-duration="1000">
+                        <img src="./images/dougnurt  (4).jpg" alt="" class="rounded-sm">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container md:w-1/2 items-center justify-center" >
+                <div class="grid  items-center justify-center" data-aos="fade-left">
+                    <h2 class="text-4xl font-bold concert-one-regular pb-4">
+                        The Place 
+                    </h2>
+                    <p class="text-sm">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, 
+                        sed stet lorem sit.
+                    </p>
+
+                    <p class="text-sm py-8">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                         sed stet lorem sit clita duo justo magna dolore erat amet
+                    </p>
+                </div>
+                
+                <div class="flex items-center gap-20" data-aos="fade-up">
+                    <div class="flex items-center space-x-4">
+                        <!-- Vertical line -->
+                        <div class="h-18 border-l-4 border-orange-500"></div>
+                      
+                        <!-- Content -->
+                        <div class=" items-center">
+                          <div class="text-5xl font-bold text-orange-500">15</div>
+                          <div class="text-2xl text-gray-500">Years of</div>
+                          <div class="text-2xl font-bold text-black">EXPERIENCE</div>
+                        </div>
+                      </div>
+
+                      <div class="flex items-center space-x-4">
+                        <!-- Vertical line -->
+                        <div class="h-18 border-l-4 border-orange-500"></div>
+                      
+                        <!-- Content -->
+                        <div class=" items-center">
+                          <div class="text-5xl font-bold text-orange-500">50</div>
+                          <div class="text-2xl text-gray-500">Popular</div>
+                          <div class="text-2xl font-bold text-black">MASTER CHEFS</div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!--Menu Section-->
+
+    <section id="menu" class="bg-img-2 text-white">
+        <section class="max-w-[1440px] container mx-auto px-8 py-20  items-center gap-12">
+            <div>
+                <div class="text-4xl items-center  ">
+                    <h2 class="text-2xl items-center flex mx-auto justify-center text-black">Food Menu</h2>
+                    <h2 class="text-3xl items-center flex mx-auto justify-center py-8 text-black">MOST POPULAR ITEMS</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 shadow-lg">
+                    <!-- Single Menu Item -->
+                    <div class="flex items-center space-x-4  pb-4">
+                      <img src="./images/dougnurt  (2).jpg" alt="Menu Image" class="w-20 h-20 object-cover rounded">
+                      <div class="flex-1">
+                        <h3 class="text-lg font-bold border-b text-black">Chicken Burger</h3>
+                        <p class="text-sm text-black">Ipsum ipsum clita erat amet dolor justo diam</p>
+                      </div>
+                      <div class="text-orange-500 font-bold text-lg">
+                        $115
+                      </div>
+                    </div>
+                  
+                    <!-- Repeat for each item -->
+                    <div class="flex items-center space-x-4  pb-4">
+                      <img src="./images/dougnurt  (1).jpg" alt="Menu Image" class="w-20 h-20 object-cover rounded">
+                      <div class="flex-1">
+                        <h3 class="text-lg font-bold border-b text-black">Chicken Burger</h3>
+                        <p class="text-sm text-black">Ipsum ipsum clita erat amet dolor justo diam</p>
+                      </div>
+                      <div class="text-orange-500 font-bold text-lg">
+                        $115
+                      </div>
+                    </div>
+
+                    <!-- Single Menu Item -->
+                    <div class="flex items-center space-x-4  pb-4">
+                        <img src="./images/dougnurt  (2).jpg" alt="Menu Image" class="w-20 h-20 object-cover rounded">
+                        <div class="flex-1">
+                          <h3 class="text-lg font-bold  border-b text-black">Chicken Burger</h3>
+                          <p class="text-sm text-black">Ipsum ipsum clita erat amet dolor justo diam</p>
+                        </div>
+                        <div class="text-orange-500 font-bold text-lg">
+                          $115
+                        </div>
+                      </div>
+                    
+                      <!-- Repeat for each item -->
+                      <div class="flex items-center space-x-4  pb-4">
+                        <img src="./images/dougnurt  (1).jpg" alt="Menu Image" class="w-20 h-20 object-cover rounded">
+                        <div class="flex-1">
+                          <h3 class="text-lg font-bold  border-b text-black">Chicken Burger</h3>
+                          <p class="text-sm text-black">Ipsum ipsum clita erat amet dolor justo diam</p>
+                        </div>
+                        <div class="text-orange-500 font-bold text-lg">
+                          $115
+                        </div>
+                      </div>
+
+                      <!-- Single Menu Item -->
+                    <div class="flex items-center space-x-4  pb-4">
+                        <img src="./images/dougnurt  (2).jpg" alt="Menu Image" class="w-20 h-20 object-cover rounded">
+                        <div class="flex-1">
+                          <h3 class="text-lg font-bold border-b text-black">Chicken Burger</h3>
+                          <p class="text-sm text-black">Ipsum ipsum clita erat amet dolor justo diam</p>
+                        </div>
+                        <div class="text-orange-500 font-bold text-lg">
+                          $115
+                        </div>
+                      </div>
+                    
+                      <!-- Repeat for each item -->
+                      <div class="flex items-center space-x-4  pb-4">
+                        <img src="./images/dougnurt  (1).jpg" alt="Menu Image" class="w-20 h-20 object-cover rounded">
+                        <div class="flex-1">
+                          <h3 class="text-lg font-bold  border-b text-black">Chicken Burger</h3>
+                          <p class="text-sm text-black ">Ipsum ipsum clita erat amet dolor justo diam</p>
+                        </div>
+                        <div class="text-orange-500 font-bold text-lg">
+                          $115
+                        </div>
+                      </div>
+
+                      
+                      <!-- Single Menu Item -->
+                    <div class="flex items-center space-x-4  pb-4">
+                        <img src="./images/dougnurt  (2).jpg" alt="Menu Image" class="w-20 h-20 object-cover rounded">
+                        <div class="flex-1">
+                          <h3 class="text-lg font-bold text-black border-b">Chicken Burger</h3>
+                          <p class="text-sm text-black">Ipsum ipsum clita erat amet dolor justo diam</p>
+                        </div>
+                        <div class="text-orange-500 font-bold text-lg">
+                          $115
+                        </div>
+                      </div>
+                    
+                      <!-- Repeat for each item -->
+                      <div class="flex items-center space-x-4  pb-4">
+                        <img src="./images/dougnurt  (1).jpg" alt="Menu Image" class="w-20 h-20 object-cover rounded">
+                        <div class="flex-1">
+                          <h3 class="text-lg font-bold text-black border-b">Chicken Burger</h3>
+                          <p class="text-sm text-black ">Ipsum ipsum clita erat amet dolor justo diam</p>
+                        </div>
+                        <div class="text-orange-500 font-bold text-lg">
+                          $115
+                        </div>
+                      </div>           
+                  </div>           
+            </div>
+        </section>
+    </section>
+
+    <!--Contact Section-->
+
+    <section id="contact" class="px-16 py-8 shadow-lg">
+       
+            <h2 class="text-3xl py-16 flex items-center justify-center ">Contact Us</h2>
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 min-h-screen shadow-lg">
+                <!-- Left Side Image -->
+                <div>
+                  <img src="./images/food-background.jpg" alt="Restaurant" class="w-full h-full object-cover">
+                  
+                </div>
+              
+                <!-- Right Side Form -->
+                <div class="bg-[#0f0f0f] flex flex-col justify-center p-2 md:p-8 text-white">
+                  <div class="mb-2">
+                    <h4 class="text-orange-400 font-semibold mb-4 animate-pulse">Contact</h4>
+                    <h2 class="text-2xl md:text-1xl font-extrabold animate-pulse" data-aos="zoom-in-down">SEND US A MESSAGE</h2>
+                  </div>
+              
+                  <form class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <input type="text" placeholder="Your Name" class="p-3 rounded bg-white text-gray-700 w-full focus:outline-none" />
+                      <input type="email" placeholder="Your Email" class="p-3 rounded bg-white text-gray-700 w-full focus:outline-none" />
+                    </div>
+                    <textarea placeholder="Message" rows="4" class="p-3 rounded bg-white text-gray-700 w-full focus:outline-none"></textarea>
+              
+                    <button type="submit" class="w-full bg-orange-400 hover:bg-orange-500 transition p-3 rounded text-white font-semibold">
+                      SEND MESSAGE
+                    </button>
+                  </form>
+                </div>
+              </div>
+              
+
+    </section>
+
+    <!--Footer Section-->
+
+    <footer class="bg-[#f8f8f8] " >
+        <section class="max-w-[1440px] container mx-auto px-8 py-20  items-center gap-12 md:items-center">
+            <div class="section-container" data-aos="fade-up">
+                <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <!--brand column-->
+                    <div class="lg:col-span-1">
+                        <div class="flex items-center gap-2 mb-5">
+                            <img src="./images/logo.png" alt="" class="h-8">
+                            <span class="text-xl font-bold">The Place</span>
+                        </div>
+                        <p class="text-primary-text mb-8">The Place is standard restaurant where good quality foods are served</p>
+                        <div class="flex gap-4">
+                            <div class="flex gap-4">
+                                <a href="/" class="p-2 rounded-full bg-orange-400 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 duration-300" data-aos="zoom-in-down">
+                                    <img src="./images/facebook.png" alt="" class="size-4">
+                                </a>
+                            </div>
+        
+                            <div class="flex gap-4">
+                                <a href="/" class="p-2 rounded-full bg-orange-400 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 duration-300" data-aos="zoom-in-down">
+                                    <img src="./images/twitter.png" alt="" class="size-4">
+                                </a>
+                            </div>
+        
+                            <div class="flex gap-4">
+                                <a href="/" class="p-2 rounded-full bg-orange-400 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 duration-300" data-aos="zoom-in-down">
+                                    <img src="./images/instagram.png" alt="" class="size-4">
+                                </a>
+                            </div>
+                        </div> 
+                        
+                        <p class="text-primary-text mt-8">2025 The Place</p>
+                    </div>
+                    <!--product column-->
+                    <div>
+                        <h3 class="font-medium text-lg mb-6">Home</h3>
+                        <ul class="space-y-4">
+                            <li> 
+                                <a href="#" class="hover:text-primary">About</a>
+                            </li>
+        
+                            <li> 
+                                <a href="#" class="hover:text-primary">Services</a>
+                            </li>
+                            <li> 
+                                <a href="#" class="hover:text-primary">Menu</a>
+                            </li>
+                            <li> 
+                                <a href="#" class="hover:text-primary">Contact</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+        
+                    <!--Engage column-->
+        
+                    <div>
+                        <h3 class="font-medium text-lg mb-6">Engage</h3>
+                        <ul class="space-y-4">
+                            <li> 
+                                <a href="#" class="hover:text-primary">Home</a>
+                            </li>
+        
+                            <li> 
+                                <a href="#" class="hover:text-primary">About</a>
+                            </li>
+                            <li> 
+                                <a href="#" class="hover:text-primary">Services</a>
+                            </li>
+                            <li> 
+                                <a href="#" class="hover:text-primary">Menu</a>
+                            </li>
+                            <li> 
+                                <a href="#" class="hover:text-primary">Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <!--Earn Money-->
+        
+                    <div>
+                        <h3 class="font-medium text-lg mb-6">Earn Money</h3>
+                        <ul class="space-y-4">
+                            <li> 
+                                <a href="#" class="hover:text-primary">Refer</a>
+                            </li>
+        
+                            <li> 
+                                <a href="#" class="hover:text-primary">Advertise</a>
+                            </li>
+                            <li> 
+                                <a href="#" class="hover:text-primary">Ideas</a>
+                            </li>
+                            
+                            </li>
+                        </ul>
+                    </div>
+        
+        
+                </div>
+        
+            </div>
+        </section>
+        
+    </footer>
+
+  
+  
+      
+   
+
+    
+                <!-- JS to toggle mobile menu -->
+                <script>
+                  const menuBtn = document.getElementById('menu-btn');
+                  const mobileMenu = document.getElementById('mobile-menu');
+                
+                  menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                  });
+                </script>
+
+          
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            window.addEventListener('scroll', function() {
+              const navbar = document.getElementById('navbar');
+              if (window.scrollY > 50) {
+                navbar.classList.add('bg-black', 'shadow-md', 'text-black');
+                navbar.classList.remove('bg-transparent', 'text-white');
+              } else {
+                navbar.classList.remove('bg-white', 'shadow-md', 'text-black');
+                navbar.classList.add( 'bg-transparent', 'text-white');
+              }
+            });
+          </script>
+        <script>
+             AOS.init(
+                {
+                 duration:1000,
+                 once:true
+                }
+             );
+        </script>
+</body>
+</html>
